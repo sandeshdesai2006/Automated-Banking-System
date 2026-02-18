@@ -156,7 +156,6 @@ function showToast(message) {
     setTimeout(() => toast.remove(), 500);
   }, 3000);
 }
-showToast("Deposit Successful!");
 function loadTransactions() {
   let list = document.getElementById("historyList");
   if (!list) return;
@@ -299,3 +298,4 @@ window.onload = function () {
     main.classList.add("expanded");
   }
 };
+
