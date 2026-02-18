@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyBank Pro Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+
+    
+    <h2 class="brand">🏦 MyBank </h2>
+
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="transfer.html">Transfer</a>
+    <a href="transactions.html">Transactions</a>
+  
+    <a href="bills.html">Bills</a>
+    <a href="support.html">Support</a>
+    
+    <a href="analytics.html">Analytics</a>
+    <a href="goals.html">Savings Goals</a>
+    <a href="profile.html">Profile</a>
+
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <header class="topbar">
+        <button class="menu-btn" onclick="toggleSidebar()">
+  ☰
+</button>
+
+      <h1>Welcome, <span id="userName"></span> 👋</h1>
+
+      <button onclick="toggleTheme()" class="theme-btn">
+        🌙 Toggle Theme
+      </button>
+    </header>
+
+    <!-- Balance Cards -->
+    <section class="cards">
+      <div class="card-box">
+        <h3>Total Balance</h3>
+        <p>₹ <span id="balance"></span></p>
+      </div>
+
+      <div class="card-box">
+        <h3>Savings Account</h3>
+        <p>₹ <span id="savings"></span></p>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="actions">
+      <h2>Quick Actions</h2>
+
+      <button onclick="deposit()">➕ Deposit</button>
+      <button onclick="withdraw()">➖ Withdraw</button>
+      <button onclick="window.location.href='transfer.html'">💸 Transfer</button>
+    </section>
+    <div class="virtual-card">
+  <h3>💳 Virtual Debit Card</h3>
+  <p>Card Number: **** **** **** 4829</p>
+  <p>Expiry: 12/28</p>
+</div>
+<!-- Recent Transactions -->
+<section class="dashboard-section">
+  <h2>📌 Recent Transactions</h2>
+
+  <div class="transaction-box">
+    <p>💸 Sent ₹500 to Rahul</p>
+    <p>➕ Deposited ₹2000</p>
+    <p>💡 Paid Electricity Bill</p>
+    <p>➖ Withdrawn ₹1000</p>
+  </div>
+
+  <a href="transactions.html" class="view-btn">View Full History →</a>
+</section>
+
+
+<!-- Insights Section -->
+<section class="dashboard-section">
+  <h2>📊 Spending Insights</h2>
+
+  <div class="insights-grid">
+    <div class="insight-card">
+      <h3>Monthly Expense</h3>
+      <p>₹ 8,450</p>
+    </div>
+
+    <div class="insight-card">
+      <h3>Highest Spending</h3>
+      <p>Shopping 🛍</p>
+    </div>
+
+    <div class="insight-card">
+      <h3>Savings Progress</h3>
+      <p>65% Complete</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Quick Services -->
+<section class="dashboard-section">
+  <h2>⚡ Quick Services</h2>
+
+  <div class="services-grid">
+    <div class="service-card">📱 Mobile Recharge</div>
+    <div class="service-card">🏠 Home Loan</div>
+    <div class="service-card">💳 Credit Card</div>
+    <div class="service-card">🌍 Currency Exchange</div>
+    <div class="service-card">🎓 Education Loan</div>
+    <div class="service-card">📈 Investments</div>
+  </div>
+</section>
+
+
+<!-- Bank Offers -->
+<section class="dashboard-section">
+  <h2>🎁 Exclusive Offers</h2>
+
+  <div class="offers-box">
+    <p>✨ Get 10% cashback on Bill Payments</p>
+    <p>🏦 Apply for Loan at 7.5% Interest</p>
+    <p>💳 Free Credit Card for Students</p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="dashboard-footer">
+  <p>🏦 MyBank Pro © 2026</p>
+  <p>Secure | Fast | Digital Banking</p>
+</footer>
+  </main>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

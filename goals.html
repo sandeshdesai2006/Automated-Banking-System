@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Goals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav>
+    <a href="dashboard.html">⬅ Back</a>
+  </nav>
+    <div class="goals-container">
+  <h2>🎯 Savings Goal Tracker</h2>
+
+  <div class="goal-input-box">
+    <input type="number" id="goalAmount" placeholder="Enter Goal Amount">
+    <button onclick="setGoal()">Set Goal</button>
+  </div>
+
+  <div class="goal-status">
+    <div class="goal-card">
+      <h3>Your Goal</h3>
+      <p>₹ <span id="goalDisplay"></span></p>
+    </div>
+
+    <div class="goal-card">
+      <h3>Current Savings</h3>
+      <p>₹ <span id="savingsDisplay"></span></p>
+    </div>
+  </div>
+
+  <p id="goalMsg"></p>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
